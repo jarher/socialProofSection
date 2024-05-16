@@ -1,5 +1,5 @@
-import { buyerReviewComponent } from "./buyerReviewComponent.js";
-import { ratedComponent } from "./ratedComponent.js";
+import { buyerReviewComponent } from "./components/buyerReviewComponent.js";
+import { ratedComponent } from "./components/ratedComponent.js";
 import { getData } from "./getData.js";
 
 const insertInRatingContent = (data) =>
