@@ -12,12 +12,13 @@ export function ratedComponent(data) {
   const ratedContainer = document.createElement("div");
   ratedContainer.className = "rated";
 
-  const starContent = `<div class="star-content">${starCreator(
-    data.ratedStars
-  )}</div>`;
+  const starContent = `
+  <div class="star-content">
+    ${starCreator(data.ratedStars)}
+    </div>`;
+
   const paragraph = `<p>${data.ratedText}</p>`;
 
   ratedContainer.innerHTML = starContent.concat(paragraph);
-
   return ratedContainer;
 }
