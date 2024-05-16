@@ -3,15 +3,18 @@
     "rated": [
       {
         "ratedImg": "./images/icon-star.svg",
-        "ratedText": "Rated 5 Stars in Reviews"
+        "ratedText": "Rated 5 Stars in Reviews",
+        "ratedStars": 5
       },
       {
         "ratedImg": "./images/icon-star.svg",
-        "ratedText": "Rated 5 Stars in Report Guru"
+        "ratedText": "Rated 5 Stars in Report Guru",
+        "ratedStars": 5
       },
       {
         "ratedImg": "./images/icon-star.svg",
-        "ratedText": "Rated 5 Stars in BestTech"
+        "ratedText": "Rated 5 Stars in BestTech",
+        "ratedStars": 5
       }
     ],
     "buyers": [
@@ -19,19 +22,19 @@
         "buyerName": "Colton Smith",
         "buyerImage": "./images/image-colton.jpg",
         "buyerStatus": "Verified Buyer",
-        "buyerComment": "We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time.Excellent!"
+        "buyerReview": "We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time.Excellent!"
       },
       {
         "buyerName": "Irene Roberts",
         "buyerImage": "./images/image-irene.jpg",
         "buyerStatus": "Verified Buyer",
-        "buyerComment": "Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."
+        "buyerReview": "Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."
       },
       {
         "buyerName": "Anne Wallace",
         "buyerImage": "./images/image-anne.jpg",
         "buyerStatus": "Verified Buyer",
-        "buyerComment": "Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"
+        "buyerReview": "Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"
       }
     ]
   }
