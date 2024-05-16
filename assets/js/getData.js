@@ -9,6 +9,6 @@ export async function getData() {
     const res = await makeFetch();
     return res;
   } catch (error) {
-    console.log(error);
+    console.error(error);
   }
 }

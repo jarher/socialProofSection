@@ -2,18 +2,32 @@ import { buyerReviewComponent } from "./components/buyerReviewComponent.js";
 import { ratedComponent } from "./components/ratedComponent.js";
 import { getData } from "./getData.js";
 
-const insertInRatingContent = (data) =>
-  document.querySelector(".rating-content").appendChild(ratedComponent(data));
-
-const insertInBuyerReviewContent = (data) =>
-  document
-    .querySelector(".buyer-review-content")
-    .appendChild(buyerReviewComponent(data));
+const getContainer = (selector) => document.querySelector(selector);
 
 (async function renderData(callback) {
-  const data = await callback();
-  const { rated, buyers } = data[0];
+  try {
+    const data = await callback();
+    const { rated, buyers } = data[0];
 
-  rated.forEach(insertInRatingContent);
-  buyers.forEach(insertInBuyerReviewContent);
+    const containers = [
+      {
+        data: rated,
+        selector: ".rating-content",
+        component: ratedComponent,
+      },
+      {
+        data: buyers,
+        selector: ".buyer-review-content",
+        component: buyerReviewComponent,
+      },
+    ];
+
+    containers.forEach((object) => {
+      object.data.forEach((itemData) =>
+        getContainer(object.selector).appendChild(object.component(itemData))
+      );
+    });
+  } catch (error) {
+    console.error("Error fetching or rendering data:", error);
+  }
 })(getData);
