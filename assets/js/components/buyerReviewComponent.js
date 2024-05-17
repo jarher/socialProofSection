@@ -5,7 +5,7 @@ export function buyerReviewComponent(data) {
   const loadSrcImage = `<img src="${data.buyerImage}" alt="image of ${data.buyerNAme}">`;
   const buyerName = `<span class="buyer-name">${data.buyerName}</span>`;
   const buyerStatus = `<span class="buyer-status">${data.buyerStatus}</span>`;
-  const buyerReviewText = `<p>${data.buyerReview}</p>`;
+  const buyerReviewText = `<p>&#147; ${data.buyerReview} &#148;</p>`;
 
   const reviewHeader = `
     <div class="review-header">

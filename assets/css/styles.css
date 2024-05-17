@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("../../fonts/LeagueSpartan-VariableFont_wght.ttf");
+}
+
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+  --size: 15px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: "LeagueSpartan";
+}
+body {
+  background-image: url("../../images/bg-pattern-top-mobile.svg"),
+    url("../../images/bg-pattern-bottom-mobile.svg");
+  background-position: top left, bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--White);
+}
+main {
+  margin: 5.42rem 0;
+  padding: 0 1.5rem;
+}
+section h1,
+section > p,
+.rating-content {
+  text-align: center;
+}
+section h1 {
+  color: var(--Very-Dark-Magenta);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+section > p {
+  margin-top: 1.72rem;
+  color: var(--Dark-Grayish-Magenta);
+  line-height: 1.5rem;
+  font-size: 1.176rem;
+  font-weight: 500;
+}
+.rating-content {
+  margin-top: 3.13rem;
+  display: grid;
+  row-gap: 1.2rem;
+}
+.rated {
+  background-color: var(--Light-Grayish-Magenta);
+  padding: 1.06rem 0;
+  display: grid;
+  row-gap: 1rem;
+  border-radius: 0.6rem;
+}
+.star-content {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.rated p {
+  color: var(--Very-Dark-Magenta);
+  font-weight: 700;
+}
+.buyer-review-content {
+  margin-top: 3.3rem;
+  display: grid;
+  row-gap: 1rem;
+}
+.review {
+  background-color: var(--Very-Dark-Magenta);
+  padding: 2.6rem 2rem 2rem;
+  display: grid;
+  row-gap: 1.4rem;
+  border-radius: 0.6rem;
+}
+.review-header {
+  display: grid;
+  grid-template-columns: 2.6rem auto;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.review-header figure {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.review-header figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.review-header div {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 0.3rem;
+}
+.buyer-name {
+  color: var(--Light-Grayish-Magenta);
+  font-weight: 700;
+}
+.buyer-status {
+  color: var(--Soft-Pink);
+  font-weight: 400;
+}
+.review p {
+  color: var(--Light-Grayish-Magenta);
+  font-size: 1.02rem;
+  line-height: 1.4rem;
+  margin: 0;
+}
