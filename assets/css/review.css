@@ -1,0 +1,80 @@
+.buyer-review-content {
+  margin-top: 3.3rem;
+  display: grid;
+  row-gap: 1rem;
+}
+.review {
+  background-color: var(--Very-Dark-Magenta);
+  padding: 2.6rem 2rem 2rem;
+  display: grid;
+  row-gap: 1.4rem;
+  border-radius: 0.6rem;
+}
+.review-header {
+  display: grid;
+  grid-template-columns: 2.6rem auto;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.review-header figure {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.review-header figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.review-header div {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  height: 100%;
+}
+.buyer-name {
+  color: var(--Light-Grayish-Magenta);
+  font-weight: 700;
+}
+.buyer-status {
+  color: var(--Soft-Pink);
+  font-weight: 400;
+}
+.review p {
+  color: var(--Light-Grayish-Magenta);
+  font-size: 1.02rem;
+  line-height: 1.4rem;
+  margin: 0;
+}
+@media screen and (min-width: 600px) {
+  .buyer-review-content {
+    display: grid;
+    grid-column: 1 / 4;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .buyer-review-content {
+    margin-top: 0;
+    grid-column: 1 / 8;
+    height: 18rem;
+    display: flex;
+  }
+  .review {
+    height: 15.6rem;
+  }
+  .review:nth-child(1) {
+    align-self: flex-start;
+  }
+  .review:nth-child(2) {
+    align-self: center;
+  }
+  .review:nth-child(3) {
+    align-self: flex-end;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .buyer-review-content {
+    column-gap: 2rem;
+  }
+}

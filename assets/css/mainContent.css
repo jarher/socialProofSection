@@ -1,0 +1,28 @@
+.main-content {
+  text-align: center;
+}
+.main-content h1 {
+  color: var(--Very-Dark-Magenta);
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.main-content p {
+  margin-top: 1.72rem;
+  color: var(--Dark-Grayish-Magenta);
+  line-height: 1.5rem;
+  font-size: 1.276rem;
+  font-weight: 500;
+}
+@media screen and (min-width: 1024px) {
+  .main-content {
+    text-align: left;
+    grid-column: 1 / 4;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+  .main-content h1 {
+    font-size: 3.7rem;
+    letter-spacing: -0.1rem;
+  }
+}
