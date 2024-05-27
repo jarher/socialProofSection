@@ -31,3 +31,7 @@ const getContainer = (selector) => document.querySelector(selector);
     console.error("Error fetching or rendering data:", error);
   }
 })(getData);
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("show");
+});

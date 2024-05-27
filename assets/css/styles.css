@@ -32,6 +32,8 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: var(--White);
+  opacity: 0;
+  transition: all 0.5s ease-in;
 }
 main {
   margin: 5.42rem 0;
@@ -88,4 +90,7 @@ section {
   body {
     background-size: auto 22rem, 73rem 43rem;
   }
+}
+.show {
+  opacity: 1;
 }
