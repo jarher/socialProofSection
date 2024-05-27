@@ -2,17 +2,14 @@
   {
     "rated": [
       {
-        "ratedImg": "./images/icon-star.svg",
         "ratedText": "Rated 5 Stars in Reviews",
         "ratedStars": 5
       },
       {
-        "ratedImg": "./images/icon-star.svg",
         "ratedText": "Rated 5 Stars in Report Guru",
         "ratedStars": 5
       },
       {
-        "ratedImg": "./images/icon-star.svg",
         "ratedText": "Rated 5 Stars in BestTech",
         "ratedStars": 5
       }
