@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/social-proof-section-html-css-javascript-Yuq6ORd0zA]
 - Live Site URL: [https://jarher.github.io/socialProofSection/]
 
 ## My process
